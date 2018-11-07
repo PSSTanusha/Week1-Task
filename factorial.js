@@ -9,3 +9,7 @@ function Factorial(arr)
     console.log(res);
 }
 Factorial(process.argv.slice(2));
+
+output:
+C:\Users\tanus\.vscode\extensions>node factorial.js 5
+120
