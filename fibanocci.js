@@ -15,3 +15,7 @@ function fibonacci(arr)
     console.log(arr1);
 }
 fibonacci(process.argv.slice(2));
+
+output:
+C:\Users\tanus\.vscode\extensions>node fibanocci.js 10
+[ 0, 1, 1, 2, 3, 5, 8, 13, 21, 34 ]
