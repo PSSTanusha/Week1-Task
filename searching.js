@@ -13,3 +13,7 @@ function search(arr)
     }
 }
 search(process.argv.slice(2));
+
+output:
+C:\Users\tanus\.vscode\extensions>node searching.js 1 2 3 4 5 1
+The element 1 is found at position 5
