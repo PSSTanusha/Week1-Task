@@ -16,3 +16,7 @@ function sort(arr)
    console.log("The sorted array is:"+arr);
 }
 sort(process.argv.slice(2));
+
+output:
+C:\Users\tanus\.vscode\extensions>node sorting.js 72 35 46 1 6 0 3
+The sorted array is:0,1,3,6,35,46,72
