@@ -14,3 +14,8 @@ function duplicate(arr)
        console.log(arr1[i]+" ");
 }
 duplicate(process.argv.slice(2));
+
+output:
+C:\Users\tanus\.vscode\extensions>node duplicate.js 1 2 3 4 2 5 5
+2
+5
