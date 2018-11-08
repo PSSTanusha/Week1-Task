@@ -1,0 +1,44 @@
+Single Threading and Multi Threading
+
+Single threading:
+   In computer programming, single-threading is the processing of one command at a time. The opposite of single-threading is multithreading.
+   In the formal analysis of the variables' semantics and process state the term single threading can be used differently to mean
+"backtracking within a single thread", which is common in the functional programming community. 
+
+Multithreading:
+
+Multithreading is mainly found in multitasking operating systems. Multithreading is a widespread programming and execution model that 
+allows multiple threads to exist within the context of one process. These threads share the process's resources, but are able to execute 
+independently. The threaded programming model provides developers with a useful abstraction of concurrent execution. 
+Multithreading can also be applied to one process to enable parallel execution on a multiprocessing system.
+
+Multithreaded applications have the following advantages:
+* Responsiveness: multithreading can allow an application to remain responsive to input. 
+  In a one-thread program, if the main execution thread blocks on a long-running task, the entire application can appear to freeze. 
+  By moving such long-running tasks to a worker thread that runs concurrently with the main execution thread, it is possible for the 
+  application to remain responsive to user input while executing tasks in the background. On the other hand, in most cases multithreading 
+  is not the only way to keep a program responsive, with non-blocking I/O and/or Unix signals being available for gaining similar results.
+* Faster execution: this advantage of a multithreaded program allows it to operate faster on computer systems that have multiple central 
+  processing units (CPUs) or one or more multi-core processors, or across a cluster of machines, because the threads of the program 
+  naturally lend themselves to parallel execution, assuming sufficient independence (that they do not need to wait for each other).
+* Lower resource consumption: using threads, an application can serve multiple clients concurrently using fewer resources than it would 
+  need when using multiple process copies of itself. For example, the Apache HTTP server uses thread pools: a pool of listener threads 
+  for listening to incoming requests, and a pool of server threads for processing those requests.
+* Better system utilization: as an example, a file system using multiple threads can achieve higher throughput and lower latency since 
+  data in a faster medium (such as cache memory) can be retrieved by one thread while another thread retrieves data from a slower medium 
+  (such as external storage) with neither thread waiting for the other to finish.
+* Simplified sharing and communication: unlike processes, which require a message passing or shared memory mechanism to perform 
+  inter-process communication (IPC), threads can communicate through data, code and files they already share.
+* Parallelization: applications looking to use multicore or multi-CPU systems can use multithreading to split data and tasks into parallel
+  subtasks and let the underlying architecture manage how the threads run, either concurrently on one core or in parallel on multiple cores
+. GPU computing environments like CUDA and OpenCL use the multithreading model where dozens to hundreds of threads run in parallel across
+  data on a large number of cores.
+Multithreading has the following drawbacks:
+* Synchronization: since threads share the same address space, the programmer must be careful to avoid race conditions and other 
+  non-intuitive behaviors. In order for data to be correctly manipulated, threads will often need to rendezvous in time in order to 
+  process the data in the correct order. Threads may also require mutually exclusive operations (often implemented using mutexes) in order
+  to prevent common data from being simultaneously modified or read while in the process of being modified. 
+  Careless use of such primitives can lead to deadlocks, livelocks or races over resources.
+* Thread crashes a process: an illegal operation performed by a thread crashes the entire process; therefore, one misbehaving thread can 
+  disrupt the processing of all the other threads in the application.
+
