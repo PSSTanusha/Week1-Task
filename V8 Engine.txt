@@ -1,0 +1,39 @@
+V8 Engine:
+       Microprocessors are tiny machines that work with electrical signals and ultimately 
+do the job. We give microprocessors the instructions. The instructions are in the 
+language that microprocessors can interpret. Different microprocessors speak different 
+languages. Some of the most common are IA-32, x86–64, MIPS, and ARM. These 
+languages directly interact with the hardware so the code written in them is called 
+machine code. Code that we write on our computers is converted or compiled into 
+machine code.
+     High level languages are abstracted from machine language. In the level of 
+abstraction below, you can see how far JavaScript is abstracted from machine level. 
+C/C++ are relatively much closer to the hardware and hence much faster than other 
+high level languages. 
+     V8 is a powerful open source Javascript engine provided by Google. So what 
+actually is a Javascript Engine? It is a program that converts Javascript code into 
+lower level or machine code that microprocessors can understand.
+       Chrome V8, or simply V8, is an open-source JavaScript engine developed by 
+The Chromium Project for Google Chrome and Chromium web browsers.[5] The 
+project’s creator is Lars Bak.[6] The first version of the V8 engine was released at the 
+same time as the first version of Chrome: September 2, 2008. It has also been used 
+in Couchbase, MongoDB and Node.js that are used server-side.
+        V8 compiles JavaScript directly to native machine code before executing it, 
+instead of more traditional techniques such as interpreting bytecode or compiling the 
+whole program to machine code and executing it from a filesystem. The compiled 
+code is additionally optimized (and re-optimized) dynamically at runtime, based on 
+heuristics of the code's execution profile. Optimization techniques used 
+include inlining, elision of expensive runtime properties, and inline caching. 
+The garbage collector is a generational incremental collector.
+        There are different JavaScript engines including Rhino, JavaScriptCore, 
+and SpiderMonkey. These engines follow the ECMAScript Standards. ECMAScript 
+defines the standard for the scripting language. JavaScript is based on ECMAScript 
+standards. These standards define how the language should work and what features it 
+should have.
+The Chrome V8 engine :
+*	The V8 engine is written in C++ and used in Chrome and Nodejs.
+*	It implements ECMAScript as specified in ECMA-262.
+*	The V8 engine can run standalone we can embed it with our own C++ 
+program.
+
+
