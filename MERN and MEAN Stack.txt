@@ -1,0 +1,42 @@
+MERN and MEAN Stack
+   MERN is merely an acronym standing for MongoDB, Express.js, React, and Node.js. 
+   However, MERN is just the new kid on the block, following in the footsteps of the MEAN Stack?—?MongoDB, Express, Angular 2, and Node. 
+   Angular, the powerful front-end framework, sits at the heart of the stack and is built using a Model-View-Controller design pattern. 
+ As React grows in popularity, it has presented an alternative choice for frontend development, although React is merely a library, not a 
+full-fledged MVC framework. MongoDB is a major player and an incredibly popular choice in the NoSQL database management world. Node.js 
+allows the programmer to write the backend of the application in Javascript, and Express is used on top of Node to handle the routing 
+requests and either provide a REST API, or even can be used to generate the final HTML to be used by the frontend framework.
+'
+Angular/React
+Angular or React, whichever frontend framework/library best suits your application’s needs, provides the reactive user interface of your 
+application. React and Angular both utilize components, are reactive in that the user gets immediate feedback as it interacts with the 
+application, and typically run within a user’s browser (although both are isomorphic, capable of being run on a backend server). Without 
+going into too much detail, the frontend framework or library in the stack ultimately (typically) takes the data from the server and 
+presents it in a reactive and interactive user interface.
+
+Node.js
+The most simple definition, Node.js is Javascript outside of a browser. Node provides a runtime environment for Javascript, much like a 
+browser, but in its own world. In a browser setting, Javascripts must be loaded into an HTML page and that HTML page must be opened in the 
+browser in order to interact with the Javascript. In the Node environment, the HTML middle-man is removed and Javascript files can interact 
+with one another through acting as node modules. Javascript files must meet certain module standards, and then can be loaded into other 
+files through the require keyword. NPM is the default package manager, and allow developers access to tons of third party modules 
+in addition to the ones they create in their own application.
+Node is asynchronous, event driven, and non-blocking and multitasking. Node relies on callbacks to accomplish a task in succession after 
+another task, but will continue executing the rest of the code that it can while multiple things are going on in the background.
+
+Express
+As mentioned before, Node merely provides an runtime environment for Javascript that exists separately from a browser. Writing a server on 
+Node is not very easy, so enter the Express framework. Express lets you define routes, align them to HTTP requests 
+(get, post, patch, put, delete requests to a particular route) and define a series of actions to take when that route is hit.
+The Express framework parses a URL, and any headers or parameters sent along with the HTTP request and has tons of built in response 
+functionality (eg. codes, cookies, headers, etc). Express merely sits on top of Node to make the routing, request handling, and responding 
+easier to write.
+
+MongoDB
+MongoDB, as previously mentioned, is one of the most popular NoSQL database management systems. It is document-oriented, has a flexible 
+schema, and has a JSON based query language. Mongo, as is characteristic of a non-relational database is that it doesn’t rely on columns 
+and rows. This removes an imperative aspect of dealing with relational databases: Object Relational Mapping layers. Because data is stored
+in rows and columns in relational databases, the programmer must format the result of a query into a usable-programming object 
+Because MongoDB’s language is Javascript, the query language is based on JSON operations rather than English-like, 
+and can travel back and forth without really changing structure.
+
